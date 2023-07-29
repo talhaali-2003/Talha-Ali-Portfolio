@@ -3,7 +3,9 @@ import { Navbar, Container, Nav } from "react-bootstrap";
 import logo from '../assets/img/rocket.svg';
 import navIcon1 from '../assets/img/nav-icon1.svg';
 import navIcon2 from '../assets/img/resume_adobe_express.svg';
-
+import {
+  BrowserRouter as Router
+} from "react-router-dom";
 
 
 export const NavBar = () => {
@@ -30,6 +32,7 @@ export const NavBar = () => {
     }
   
     return (
+      <Router>
         <Navbar expand="md" className={scrolled ? "scrolled" : ""}>
           <Container>
             <Navbar.Brand href="/">
@@ -53,5 +56,6 @@ export const NavBar = () => {
             </Navbar.Collapse>
           </Container>
         </Navbar>
+      </Router>
     )
   }
