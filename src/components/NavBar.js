@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import { Navbar, Container, Nav } from "react-bootstrap";
 import logo from '../assets/img/rocket.svg';
 import navIcon1 from '../assets/img/nav-icon1.svg';
-import navIcon2 from '../assets/img/resume_adobe_express.svg';
+import navIcon2 from '../assets/img/Octicons-mark-github.svg';
 import {
   BrowserRouter as Router
 } from "react-router-dom";
@@ -50,6 +50,7 @@ export const NavBar = () => {
               <span className="navbar-text">
                 <div className="social-icon">
                   <a href="https://www.linkedin.com/in/talha-ali-/"><img src={navIcon1} alt="" /></a>
+                  <a href="https://github.com/talhaali-2003"><img src={navIcon2} alt="" /></a>
                 </div>
                   <a href="https://linktr.ee/talha.ali"><button className="vvd"><span>Connect With Me</span></button></a>
               </span>
